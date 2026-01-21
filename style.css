@@ -1,0 +1,197 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 3px solid #00b4d8;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #00b4d8;
+    text-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #90e0ef;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Countdown Cards */
+.countdown-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.countdown-card:hover {
+    transform: translateY(-10px);
+}
+
+#final-exams {
+    border-color: #ff6b6b;
+}
+
+#convocation {
+    border-color: #4ecdc4;
+}
+
+#sports-meet {
+    border-color: #ffe66d;
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#final-exams .card-icon {
+    color: #ff6b6b;
+}
+
+#convocation .card-icon {
+    color: #4ecdc4;
+}
+
+#sports-meet .card-icon {
+    color: #ffe66d;
+}
+
+.countdown-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.event-date {
+    color: #a0a0a0;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* Timer */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.time-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px 10px;
+    min-width: 80px;
+}
+
+.time-box span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-shadow: 0 0 10px currentColor;
+}
+
+#final-exams .time-box span {
+    color: #ff6b6b;
+}
+
+#convocation .time-box span {
+    color: #4ecdc4;
+}
+
+#sports-meet .time-box span {
+    color: #ffe66d;
+}
+
+.time-box p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.status {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #90e0ef;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .countdown-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .countdown-timer {
+        flex-wrap: wrap;
+    }
+    
+    .time-box {
+        min-width: 70px;
+    }
+    
+    .time-box span {
+        font-size: 2rem;
+    }
+}
